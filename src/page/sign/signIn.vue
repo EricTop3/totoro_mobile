@@ -2,22 +2,22 @@
 <template>
     <div class="signIn">
         <header>
-            <img src="" alt="用户头像" width="50" height="50">
+            <img :src="headerImg" alt="用户头像" width="50" height="50">
         </header>
 
         <main>
             <group>
-                <x-input title="帐号" name="account" placeholder="请输入帐号"></x-input>
+                <x-input v-model="form.account" title="帐号" name="account" placeholder="请输入帐号" required></x-input>
             </group>
             <group>
-                <x-input title="密码" type="password" name="password" placeholder="请输入密码"></x-input>
+                <x-input v-model="form.password" title="密码" type="password" name="password" placeholder="请输入密码" required></x-input>
             </group>
             <div style="font-size: 12px;text-align: right;margin: 10px;color: #999;">
                 忘记密码？
             </div>
             <box gap="10px 10px">
-                <x-button type="primary">登录</x-button>
-                <x-button>新用户注册</x-button>
+                <x-button type="primary" @click.native="handleSignIn">登录</x-button>
+                <x-button @click.native="handleSignUp">新用户注册</x-button>
             </box>
         </main>
     </div>
@@ -32,7 +32,23 @@
         },
         data () {
             return {
-
+                headerImg:'',
+                form: {
+                    account:'',
+                    password:''
+                }
+            }
+        },
+        methods: {
+            // 登录
+            handleSignIn () {
+                this.$vux.toast.show({
+                    text: '登录成功'
+                })
+            },
+            // 注册
+            handleSignUp () {
+                this.$router.push('/signUp')
             }
         }
     }

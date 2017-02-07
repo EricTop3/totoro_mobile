@@ -7,13 +7,19 @@ import App from './App'
 import Home from './page/home.vue'
 import signIn from './page/sign/signIn.vue'
 import signUp from './page/sign/signUp.vue'
+import setPassword from './page/sign/setPassword.vue'
+import createStore from './page/sign/createStore.vue'
+import {ToastPlugin} from 'vux'
 
 Vue.use(VueRouter)
+Vue.use(ToastPlugin)
 
 const routes = [
     { path: '/', component: Home },
     { path: '/signIn', component: signIn },
-    { path: '/signUp', component: signUp }
+    { path: '/signUp', component: signUp },
+    { path: '/setPassword', component: setPassword },
+    { path: '/createStore', component: createStore }
 ]
 
 const router = new VueRouter({

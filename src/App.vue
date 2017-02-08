@@ -1,3 +1,4 @@
+<!-- 页面入口 -->
 <template>
     <div>
         <router-view></router-view>
@@ -11,10 +12,9 @@
     @import '~vux/src/styles/reset.less';
 
     body {
-        background-color: #fbf9fe;
+        background-color: @background-color;
     }
-
     a {
-        color: #4078c0;
+        color: @primary-color;
     }
 </style>

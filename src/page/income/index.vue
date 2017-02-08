@@ -10,10 +10,14 @@
         </header>
         <flexbox :gutter="0">
             <flexbox-item>
-                <x-button style="border-right: 1px solid rgba(79, 79, 79, 0.2);border-radius: 0;">提现</x-button>
+                <router-link to="/cash">
+                    <x-button style="border-right: 1px solid rgba(79, 79, 79, 0.2);border-radius: 0;">提现</x-button>
+                </router-link>
             </flexbox-item>
             <flexbox-item>
-                <x-button>收支明细</x-button>
+                <router-link to="/incomeDetail">
+                    <x-button>收支明细</x-button>
+                </router-link>
             </flexbox-item>
         </flexbox>
         <group :gutter="'10px'">
@@ -38,7 +42,6 @@
             }
         },
         methods: {
-
         }
     }
 </script>

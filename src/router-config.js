@@ -14,6 +14,15 @@ import income from './page/income/index.vue'
 // 收入-提现
 import cash from './page/income/cash.vue'
 // 收入-收入明细
+import incomeDetail from './page/income/incomeDetail.vue'
+// 筛选
+import filter from './page/income/filter.vue'
+// 台卡
+import QRcode from './page/QRcode/index.vue'
+// 台卡管理
+import QRManage from './page/QRcode/QRManage.vue'
+// 添加台卡
+import addQRcode from './page/QRcode/addQRcode.vue'
 
 export default [
     { path: '/', component: home },
@@ -22,5 +31,11 @@ export default [
     { path: '/setPassword', component: setPassword },
     { path: '/createStore', component: createStore },
     { path: '/income', component: income },
-    { path: '/cash', component: cash }
+    { path: '/cash', component: cash },
+    { path: '/incomeDetail', component: incomeDetail },
+    { path: '/filter', component: filter },
+    { path: '/QRcode', component: QRcode },
+    { path: '/QRManage', component: QRManage },
+    { path: '/addQRcode', component: addQRcode },
+
 ]

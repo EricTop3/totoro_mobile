@@ -60,6 +60,7 @@ var uri = 'http://localhost:' + port
 
 devMiddleware.waitUntilValid(function () {
   console.log('> Listening at ' + uri + '\n')
+    opn(uri)
 })
 
 module.exports = app.listen(port, function (err) {

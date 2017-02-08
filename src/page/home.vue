@@ -11,11 +11,11 @@
         </header>
         <main>
             <nav>
-                <div class="nav-item">
+                <div class="nav-item" @click="routerTo('/income')">
                     <img src="" alt="">
                     <p>收入</p>
                 </div>
-                <div class="nav-item">
+                <div class="nav-item" @click="routerTo('/QRcode')">
                     <img src="" alt="">
                     <p>台卡</p>
                 </div>
@@ -30,6 +30,12 @@
         data () {
             return {
 
+            }
+        },
+        methods: {
+            routerTo (url) {
+                console.log(url);
+                this.$router.push(url)
             }
         }
     }

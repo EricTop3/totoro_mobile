@@ -23,6 +23,8 @@ import QRcode from './page/QRcode/index.vue'
 import QRManage from './page/QRcode/QRManage.vue'
 // 添加台卡
 import addQRcode from './page/QRcode/addQRcode.vue'
+// 收款
+import shouKuan from './page/shouKuan/index.vue'
 
 export default [
     { path: '/', component: home },
@@ -37,5 +39,6 @@ export default [
     { path: '/QRcode', component: QRcode },
     { path: '/QRManage', component: QRManage },
     { path: '/addQRcode', component: addQRcode },
+    { path: '/shouKuan', component: shouKuan }
 
 ]

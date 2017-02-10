@@ -90,7 +90,7 @@ module.exports = vuxLoader.merge(webpackConfig, {
         },
         {
             name: 'less-theme',
-            path: 'src/assets/theme.less'
+            path: 'src/assets/css/theme.less'
         }
     ]
 })

@@ -1,38 +1,56 @@
 <!-- 登录页面 -->
 <template>
     <div class="signIn">
-        <header>
-            <img :src="headerImg" alt="用户头像" width="50" height="50">
-        </header>
+        <x-header title="龙猫支付" :left-options="{showBack: true}" :right-options="{showMore: true}" @on-click-more="clickMore"></x-header>
+
+        <div class="head">
+            <img :src="headerImg" alt="用户头像" width="70" height="70">
+            <p>龙猫支付</p>
+        </div>
 
         <main>
-            <group>
-                <x-input v-model="form.account" title="帐号" name="account" placeholder="请输入帐号" required></x-input>
+            <group gutter="10px">
+                <cell>
+                    <i slot="icon" class="iconfont icon-zhanghao"></i>
+                    <input v-model="form.account" slot="child" class="weui_input" placeholder="请输入帐号" type="text" required>
+                </cell>
             </group>
-            <group>
-                <x-input v-model="form.password" title="密码" type="password" name="password" placeholder="请输入密码" required></x-input>
+            <group gutter="5px">
+                <cell>
+                    <i slot="icon" class="iconfont icon-mima"></i>
+                    <input v-model="form.password" slot="child" class="weui_input" placeholder="请输入密码" type="password" required>
+                </cell>
             </group>
-            <div style="font-size: 12px;text-align: right;margin: 10px;color: #999;">
-                忘记密码？
-            </div>
-            <box gap="10px 10px">
+
+            <flexbox>
+                <flexbox-item >
+                    <label for="bindWX">
+                        <input id="bindWX" type="checkbox" style="vertical-align: middle;">
+                        绑定微信号登录
+                    </label>
+                </flexbox-item>
+                <flexbox-item  style="text-align: right;">
+                    忘记密码？
+                </flexbox-item>
+            </flexbox>
+            <box gap="10px 10px" style="margin-top: 30px;">
                 <x-button type="primary" @click.native="handleSignIn">登录</x-button>
-                <x-button @click.native="handleSignUp">新用户注册</x-button>
+                <x-button type="primary" plain @click.native="handleSignUp">新用户注册</x-button>
             </box>
         </main>
     </div>
 </template>
 
 <script>
-    import {Box, XInput, Group, XButton, Cell} from 'vux'
+    import {Box, XInput, XHeader, Group, XButton, Cell, Flexbox, FlexboxItem} from 'vux'
     export default {
         name: 'signIn',
         components: {
-            Box, XInput, Group, XButton, Cell
+            Box, XInput, XHeader, Group, XButton, Cell, Flexbox, FlexboxItem
         },
         data () {
             return {
-                headerImg:'',
+                headerImg:'static/img/slide_01.png',
                 form: {
                     account:'',
                     password:''
@@ -49,22 +67,45 @@
             // 注册
             handleSignUp () {
                 this.$router.push('/signUp')
+            },
+            clickMore () {
+
             }
         }
     }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-    header{
-        padding: 30px;
+<style scoped lang="less">
+    .head{
+        height: 200px;
+        padding: 35px 10px;
         text-align: center;
-        background-color: #000;
+        background: url('../../../static/img/bg_01.png') no-repeat;
+        background-size: 100% 200px;
+        color: #fff;
     }
-    header img{
+    .head img{
         border-radius: 50%;
+    }
+    .head p{
+        font-size: 20px;
     }
     main{
         padding: 20px 0;
     }
+
+    .weui_input{padding-left: 20px;}
+
+    .vux-flex-row{
+        padding: 10px;
+        font-size: 15px;
+        color: @text-color;
+    }
+
+    .icon-zhanghao,.icon-mima{
+        font-size: 20px;
+    }
+
+
 </style>

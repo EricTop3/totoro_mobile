@@ -6,7 +6,7 @@ import VueRouter from 'vue-router'
 import App from './App'
 import routerConfig from './router-config'
 import {ToastPlugin} from 'vux'
-import Utils from './assets/util'
+import Utils from './assets/js/util'
 
 Vue.use(VueRouter)
 Vue.use(ToastPlugin)

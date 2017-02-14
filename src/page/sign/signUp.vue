@@ -12,7 +12,7 @@
                 <i slot="icon" class="iconfont icon-yanzhengma"></i>
                 <input v-model="form.vcode" slot="child" class="weui_input" placeholder="请输入验证码" type="text" required style="width: 65%;">
                 <x-button v-show="showBtn" slot="child" type="primary" class="vcode_btn" @click.native="getVcode">获取验证码</x-button>
-                <x-button v-show="!showBtn" slot="child" type="primary" plain class="vcode_btn" style="margin-top: 0;">{{number}}</x-button>
+                <x-button v-show="!showBtn" slot="child" type="primary" plain class="vcode_btn" style="margin-top: 0;height: 30px;">{{number}}</x-button>
             </cell>
         </group>
 

@@ -31,9 +31,9 @@
                                 <flexbox-item :span="1/3" @click.native="handlerClickNum(3)">3</flexbox-item>
                             </flexbox>
                             <flexbox :gutter="0">
-                                <flexbox-item :span="1/3" @click.native="handlerClickNum('00')">00</flexbox-item>
+                                <flexbox-item :span="1/3" @click.native="handlerClickDouble0">00</flexbox-item>
                                 <flexbox-item :span="1/3" @click.native="handlerClickNum(0)">0</flexbox-item>
-                                <flexbox-item :span="1/3" @click.native="handlerClickNum('.')">.</flexbox-item>
+                                <flexbox-item :span="1/3" @click.native="handlerClickDot('.')">.</flexbox-item>
                             </flexbox>
                         </flexbox-item>
                         <flexbox-item :span="1/4" class="btn" @click.native="handlerCollect">收款</flexbox-item>
@@ -62,23 +62,48 @@
                 environment:'add'
             }
         },
+        watch: {
+            formula (val){
+                var _this = this;
+                this.total = 0;
+                String(val).split('+').forEach(function (item) {
+                    _this.total += Number(item);
+                })
+            }
+        },
         methods: {
             // 点击键盘事件
             handlerClickNum (val) {
-                this.total = String(this.total);
-                this.total = Number(String(this.total) + val)
-                this.total = Number(this.total);
+                this.formula += val;
             },
             // 收款
             handlerCollect (){
 
             },
+            // 点击加号
             handlerAdd (){
-
+                var last = this.formula.split('+').pop();
+                if(/^[\d\.]+$/.test(last) && last.slice(-1) !== '.'){
+                    this.formula += '+';
+                }
             },
+            // 点击删除
             handlerDel (){
-                this.total = String(this.total);
-                this.total =  this.total.length ? this.total.slice(0,-1) : 0 ;
+                this.formula = this.formula.slice(0, -1);
+            },
+            // 点击小数点
+            handlerClickDot (){
+                var last = this.formula.split('+').pop();
+                if(/^\d+$/.test(last)){
+                    this.formula += '.';
+                }
+            },
+            // 点击 00
+            handlerClickDouble0 (){
+                var last = this.formula.split('+').pop();
+                if(last !== '0' && last !== ''){
+                    this.formula += '00';
+                }
             }
         }
     }
@@ -97,13 +122,17 @@
         right: 0;
         background-color: #fff;
     }
-    .money{
+    .money,.formula{
         text-align: right;
         background-color: @background-color;
         color: #000;
         font-size: 25px;
         padding-right: 15px;
         line-height: 2;
+    }
+    .formula{
+        color: #333;
+        font-size: 20px;
     }
     /*.weui_cell{height: 90px;}*/
     .compute_number{

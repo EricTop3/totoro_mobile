@@ -10,7 +10,7 @@
         </header>
         <main>
             <nav>
-                <div class="nav-item" @click="routerTo('/income')">
+                <div class="nav-item" @click="routerTo('/shouKuan')">
                     <!--<img src="" alt="">-->
                     <i class="iconfont icon-shoukuan2"></i>
                     <p>收款</p>

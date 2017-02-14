@@ -10,7 +10,7 @@
 
 <style lang="less">
     @import '~vux/src/styles/reset.less';
-    @import '//at.alicdn.com/t/font_knt26atfg1f6flxr.css';
+    @import '//at.alicdn.com/t/font_bu0si0eqzykqpvi.css';
 
     body {
         background-color: @background-color;

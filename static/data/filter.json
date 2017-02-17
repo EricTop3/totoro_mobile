@@ -1,0 +1,29 @@
+{
+  "errcode": 0,
+  "tradList": [
+    {
+      "tradId": "",
+      "tradType": 0,
+      "tradTime": "2017-01-01",
+      "TKName": "台卡1",
+      "tradAmount": "100.00",
+      "tradStatus": -1
+    },
+    {
+      "tradId": "",
+      "tradType": 1,
+      "tradTime": "2017-01-01",
+      "TKName": "台卡2",
+      "tradAmount": "100.00",
+      "tradStatus": -1
+    },
+    {
+      "tradId": "",
+      "tradType": 2,
+      "tradTime": "2017-01-01",
+      "TKName": "台卡3",
+      "tradAmount": "100.00",
+      "tradStatus": -1
+    }
+  ]
+}

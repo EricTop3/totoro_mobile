@@ -1,52 +1,41 @@
-<!-- 收入明细 -->
+<!-- 收入详情 -->
 <template>
     <div class="incomeDetail">
-        <x-header title="收入明细" :left-options="{showBack: true, backText:'返回'}"><router-link slot="right" to="/filter">筛选</router-link></x-header>
-        <flexbox class="group-title">
-            <flexbox-item>
-                <div>今天</div>
-            </flexbox-item>
-            <flexbox-item>
-                <div style="text-align: right;">收入:￥1245.50</div>
-            </flexbox-item>
-        </flexbox>
-        <group gutter="0">
-            <cell title="收款项目" value="￥100.00" inline-desc="13:00">
-                <img slot="icon" src="" alt="icon" width="30" height="30" style="margin-right: 15px;">
-            </cell>
-            <cell title="收款项目" value="￥100.00" inline-desc="13:00">
-                <img slot="icon" src="" alt="icon" width="30" height="30" style="margin-right: 15px;">
-            </cell>
-            <cell title="收款项目" value="￥100.00" inline-desc="13:00">
-                <img slot="icon" src="" alt="icon" width="30" height="30" style="margin-right: 15px;">
-            </cell>
-        </group>
+        <x-header title="交易详情" :left-options="{showBack: true, backText: ''}"></x-header>
+        <form-preview :header-label="付款金额" header-value="¥2400.00" :body-items="list" :footer-buttons="buttons1"></form-preview>
+
     </div>
 </template>
 
 <script>
-    import { XHeader, Group, Cell, Flexbox, FlexboxItem } from 'vux'
-    export default {
+    import { XHeader, FormPreview  } from 'vux'
+    export default{
         name: 'incomeDetail',
         components: {
-            XHeader, Group, Cell, Flexbox, FlexboxItem
+            XHeader, FormPreview
         },
         data (){
             return {
-
+                list: [{
+                    label: '商品',
+                    value: '电动打蛋机'
+                }, {
+                    label: '标题标题',
+                    value: '名字名字名字'
+                }, {
+                    label: '标题标题',
+                    value: '很长很长的名字很长很长的名字很长很长的名字很长很长的名字很长很长的名字'
+                }],
+                buttons1: [{
+                    style: 'default',
+                    text: '辅助操作'
+                }, {
+                    style: 'primary',
+                    text: '跳转到首页',
+                    link: '/'
+                }],
             }
         },
-        methods: {
 
-        }
     }
 </script>
-
-<style lang="less">
-    .group-title{
-        width: auto;
-        font-size: 14px;
-        padding: 0 15px;
-        line-height: 30px;
-    }
-</style>

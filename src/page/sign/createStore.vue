@@ -1,7 +1,9 @@
 <!-- 创建店铺 -->
 <template>
     <div class="createStore">
-        <group gutter="0">
+        <x-header title="创建店铺" :left-options="{showBack: true, backText: '' }"></x-header>
+
+        <group gutter="20px">
             <cell title="店铺logo" is-link>
                 <input slot="child" type="file" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg" class="uploader_img">
                 <img  src="static/img/bg_01.png" alt="" width="40" height="40" style="vertical-align: middle;">
@@ -15,7 +17,7 @@
             <x-address v-model="form.address" title="选择地址" placeholder="点击选择省市区" :list="addressData"></x-address>
             <x-input v-model="form.detail" title="详细地址" name="" placeholder="街道门牌信息"></x-input>
         </group>
-        <box gap="30px 10px">
+        <box gap="60px 10px">
             <x-button v-show="complete" type="primary" @click.native="handleCreate">创建</x-button>
             <x-button v-show="!complete" disabled>创建</x-button>
         </box>
@@ -23,11 +25,11 @@
 </template>
 
 <script>
-    import {ChinaAddressData, Box, Cell, Checklist, XInput, XButton, Group, XAddress} from 'vux'
+    import {ChinaAddressData, Box, Cell, Checklist, XInput, XButton, XHeader, Group, XAddress} from 'vux'
     export default {
         name: 'createStore',
         components: {
-            Box, Checklist, Cell, XInput, XButton, Group, XAddress
+            Box, Checklist, Cell, XInput, XHeader, XButton, Group, XAddress
         },
         data () {
             return {
@@ -85,6 +87,7 @@
     }
     .createStore .vux-popup-picker-select span:not(.vux-popup-picker-value){
         margin-left: -15px;
-        color: #999;
+        color: @text-color;
     }
+
 </style>

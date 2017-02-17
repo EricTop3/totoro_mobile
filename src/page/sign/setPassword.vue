@@ -1,6 +1,8 @@
 <!-- 设置密码 -->
 <template>
     <div class="setPassword">
+        <x-header title="设置密码" :left-options="{showBack: true, backText: '' }"></x-header>
+
         <group gutter="25px">
             <cell>
                 <i slot="icon" class="iconfont icon-zhanghao"></i>
@@ -23,11 +25,11 @@
 </template>
 
 <script>
-    import { Box, Cell, Checklist, XInput, XButton ,Group } from 'vux'
+    import { Box, Cell, Checklist, XInput, XButton, XHeader ,Group } from 'vux'
     export default {
         name: 'setPassword',
         components: {
-            Box, Cell, XInput, Checklist, XButton, Group
+            Box, Cell, XInput, XHeader, Checklist, XButton, Group
         },
         data () {
             return {
@@ -72,12 +74,26 @@
     }
 </script>
 
-<style scoped>
-    .submit{
+<style>
+   .setPassword .submit{
         margin-top: 40px;
     }
-    .weui_input{padding-left: 20px;}
-    .errMsg{
+    @media screen and (max-height: 480px){
+       .setPassword .submit{
+            margin-top: 40px;
+        }
+    }
+   .setPassword .submit{
+        margin-top: 70px;
+    }
+    @media screen and (min-height: 668px){
+       .setPassword .submit{
+            margin-top: 100px;
+        }
+    }
+   .setPassword .weui_cell{height: 54px;}
+   .setPassword .weui_input{padding-left: 20px;}
+   .setPassword .errMsg{
         font-size: 15px;
         color: red;
         padding: 10px 15px;

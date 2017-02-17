@@ -1,8 +1,10 @@
 <!-- 提现 -->
 <template>
     <div class="cash">
+        <x-header title="提现" :left-options="{showBack: true, backText: '' }"></x-header>
+
         <div style="padding:20px 15px;">
-            <button-tab v-model="form.type">
+            <button-tab v-model="form.type" :height="40">
                 <button-tab-item selected>
                     提现至个人账户
                 </button-tab-item>
@@ -20,7 +22,8 @@
 
         <group gutter="10px" labelAlign="left" label-width="90px" label-margin-right="10px">
             <x-input title="验证码" placeholder="输入验证码">
-                <x-button slot="right" mini plain type="primary">发送验证码</x-button>
+                <x-button v-show="!showNumber" slot="right" mini  type="primary" @click.native="handlerClickVcode" style="height: 30px;">获取验证码</x-button>
+                <x-button v-show="showNumber" slot="right" mini plain type="primary" style="height: 30px;">{{number}}</x-button>
             </x-input>
         </group>
         <p class="tip">验证码以短信方式发送至手机18825144569,请注意查收</p>
@@ -31,11 +34,11 @@
 </template>
 
 <script>
-    import { PopupPicker, Cell, XInput, XButton, Group, ButtonTab, ButtonTabItem } from 'vux'
+    import { PopupPicker, Cell, XInput, XButton, XHeader, Group, ButtonTab, ButtonTabItem } from 'vux'
     export default {
         name: 'cash',
         components: {
-            PopupPicker, Cell, Group, XInput, XButton, ButtonTab, ButtonTabItem
+            PopupPicker, Cell, Group, XInput, XButton, XHeader, ButtonTab, ButtonTabItem
         },
         data (){
             return {
@@ -50,20 +53,54 @@
                     cardNo:'',
                     name:'',
                     vcode:''
-                }
+                },
+                number: 60,
+                showNumber: false
+            }
+        },
+        methods: {
+            handlerClickVcode () {
+                this.showNumber = true;
+                let self = this;
+                let interval = setInterval(function () {
+                    if(self.number > 0){
+                        self.number --
+                    }else {
+                        clearInterval(interval)
+                    }
+                },1000)
             }
         }
     }
 </script>
 
-<style>
+<style  lang="less">
     .cash .tip{
-        font-size: 12px;
-        color: #999;
+        font-size: 15px;
+        color: @text-color;
         padding:5px 15px;
     }
     .cash .vux-popup-picker-select span.vux-popup-picker-value + span{
-        color: #999;
+        color: @text-color;
         margin-left: -15px;
+    }
+    .cash .vux-button-group > a.vux-button-group-current,.cash .vux-button-group > a.hover,.cash .vux-button-group > a:active{
+        border-color: @primary-color;
+        background: @primary-color;
+    }
+    .cash .vux-button-group > a{
+        color: @text-color;
+    }
+    .cash .vux-button-group > a:first-child{
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    .cash .vux-button-group > a:last-child{
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    .cash .weui_btn + .weui_btn{
+        margin-top: 0;
+        min-width: 93px;
     }
 </style>

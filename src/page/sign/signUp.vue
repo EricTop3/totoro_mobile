@@ -1,6 +1,7 @@
 <!-- 注册页面 -->
 <template>
     <div class="signUp">
+        <x-header title="注册" :left-options="{showBack: true, backText: '' }"></x-header>
         <group gutter="25px">
             <cell>
                 <i slot="icon" class="iconfont icon-mobile"></i>
@@ -15,13 +16,13 @@
                 <x-button v-show="!showBtn" slot="child" type="primary" plain class="vcode_btn" style="margin-top: 0;height: 30px;">{{number}}</x-button>
             </cell>
         </group>
+        <label for="checkbox" class="checkbox-label">
+            <input v-model="form.hasRead" type="checkbox" id="checkbox" class="checkbox">
+            我已阅读并同意
+            <a href="">支付吧商户服务协议</a>
+        </label>
 
-        <box gap="10px 10px">
-            <label for="checkbox" class="checkbox-label">
-                <input v-model="form.hasRead" type="checkbox" id="checkbox" class="checkbox">
-                我已阅读并同意
-                <a href="">支付吧商户服务协议</a>
-            </label>
+        <box class="btn_group">
             <div style="margin-top: 40px;">
                 <x-button  v-show="!complete" disabled class="submit">下一步</x-button>
                 <x-button v-show="complete" type="primary" class="submit" @click.native="handleNextStep">下一步</x-button>
@@ -31,11 +32,11 @@
 </template>
 
 <script>
-    import { Box, Cell, Checklist, XInput, XButton ,Group} from 'vux'
+    import { Box, Cell, Checklist, XInput, XButton, XHeader ,Group} from 'vux'
     export default {
         name: 'signUp',
         components: {
-         Box, Cell, XInput, Checklist, XButton, Group
+         Box, Cell, XInput, Checklist, XButton, XHeader, Group
         },
         data () {
             return {
@@ -91,15 +92,19 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .checkbox-label{
+        display: block;
         font-size: 15px;
         color: #999;
+        margin: 10px 15px;
     }
     .checkbox{
-        vertical-align: middle;
+        vertical-align: baseline;
     }
     .submit{
         margin: 30px 0;
     }
+    .weui_cell{height: 54px;}
+
     .weui_input{padding-left: 20px;vertical-align: baseline;}
 
     .icon-yanzhengma,.icon-mobile{
@@ -107,4 +112,18 @@
     }
 
     .vcode_btn{display:inline-block;width: 100px; line-height: 30px;padding: 0 10px;font-size: 15px;white-space: nowrap;}
+
+    @media screen and (max-height: 480px){
+        .signUp .btn_group{
+            margin: 60px 10px;
+        }
+    }
+    .signUp .btn_group{
+        margin: 90px 10px;
+    }
+    @media screen and (min-height: 668px){
+        .signUp .btn_group{
+            margin: 120px 10px;
+        }
+    }
 </style>

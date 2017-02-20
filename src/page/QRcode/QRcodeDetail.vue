@@ -4,7 +4,7 @@
         <x-header title="台卡" :left-options="{showBack: true, backText: ''}"></x-header>
         <main>
             <div class="content">
-                <cell title="台卡名称:7-ELEVEN黄村店台卡" is-link class="content_title"></cell>
+                <cell title="台卡名称:7-ELEVEN黄村店台卡" is-link class="content_title" @click.native="changeTKname"></cell>
                 <img src="" alt="" width="160" height="160" style="margin: 20px 0 15px;">
                 <div>
                     <i class="iconfont icon-weixin"></i>
@@ -13,8 +13,8 @@
                 <p class="tip">扫一扫，即可付款！</p>
             </div>
             <div class="btn_group">
-                <x-button type="primary" class="submit" @click.native="handlerClick">保存到相册</x-button>
-                <x-button type="primary" plain class="submit" @click.native="handlerClick">查看流水</x-button>
+                <x-button type="primary" class="submit" @click.native="handlerSave">保存到相册</x-button>
+                <x-button type="primary" plain class="submit" @click.native="handlerFilter">查看流水</x-button>
             </div>
         </main>
     </div>
@@ -29,6 +29,28 @@
         },
         data (){
             return {
+
+            }
+        },
+        methods: {
+            // 修改台卡名称
+            changeTKname (){
+                // TODO修改台卡名称
+
+            },
+            // 查看当前台卡流水
+            handlerFilter (){
+
+            },
+            // 保存二维码
+            handlerSave (){
+
+            }
+        },
+        created (){
+            // 根据台卡id获取台卡信息
+            var TKId = this.utils.getUrlParam('TKId');
+            if(TKId){
 
             }
         }

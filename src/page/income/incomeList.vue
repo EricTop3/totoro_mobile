@@ -1,7 +1,7 @@
 <!-- 收入列表 -->
 <template>
     <div class="incomeList">
-         <list :tradList="tradList"></list>
+         <list></list>
     </div>
 </template>
 
@@ -16,8 +16,9 @@
         },
         data (){
             return {
-                tradList: store.state.tradList
             }
+        },
+        created (){
         }
     }
 </script>

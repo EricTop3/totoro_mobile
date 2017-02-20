@@ -1,10 +1,12 @@
 <!-- 收入明细列表 -->
 <template>
     <div class="list">
-        <x-header title="收入明细" :left-options="{showBack: true, backText:''}"><router-link slot="right" to="/filter">筛选</router-link></x-header>
+        <x-header title="收入明细" :left-options="{showBack: true, backText:''}">
+            <router-link slot="right" to="/filter">筛选</router-link>
+        </x-header>
         <div class="group-title">总收入:￥20.00</div>
         <template v-for="item in tradList">
-                <group gutter="10px">
+            <group gutter="10px">
                 <!-- 收款 -->
                 <cell v-if="item.tradType == 0" title="收款项目" inline-desc="2017.01.28 台卡1">
                     <span class="cell_ft">￥{{item.tradAmount}}</span>
@@ -44,24 +46,26 @@
                     </div>
                     <i slot="icon" class="iconfont icon-tixian"></i>
                 </cell>
-                </group>
-            </template>
-
+            </group>
+        </template>
     </div>
 </template>
 
 <script>
-
+    import store from 'src/store.js'
     import { XHeader, Group, Cell, Flexbox, FlexboxItem } from 'vux'
     export default {
         name: 'list',
         components: {
             XHeader, Group, Cell, Flexbox, FlexboxItem
         },
-        props: ['tradList'],
         data (){
             return {
+                tradList: []
             }
+        },
+        mounted (){
+            this.tradList = store.state.tradList;
         }
     }
 </script>

@@ -3,8 +3,6 @@ import Vuex from 'vuex'
 import VueResource from 'vue-resource'
 import VueRouter from 'vue-router'
 
-
-
 Vue.use(Vuex)
 Vue.use(VueResource)
 Vue.use(VueRouter)
@@ -50,14 +48,13 @@ const state = {
 }
 
 const mutations = {
+    // 获取收入详情列表数据
     getTradList (state, payload){
         Vue.http.get('/static/data/filter.json',{payload}).then((res)=>{
             if(res.data.errcode == 0){
                 state.tradList = res.data.tradList;
-                status = true
-                console.log('请求成功',state.tradList);
+                payload.success ? payload.success():'';
             }
-            state.tradList = payload;
         })
     }
 }

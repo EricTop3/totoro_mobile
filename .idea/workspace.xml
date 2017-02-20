@@ -5,36 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f370e20-1e82-4463-ad2d-bbdc435ffde1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/checker.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/list.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/page/QRcode/QRcodeDetail.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/page/income/incomeList.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/page/shouKuan/QRcode.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/page/shouKuan/status.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/page/sign/resetPassword.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/store.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/data/filter.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/data/userJson.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/page/income/result.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/css/theme.less" afterPath="$PROJECT_DIR$/src/assets/css/theme.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/js/util.js" afterPath="$PROJECT_DIR$/src/assets/js/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/QRcode/addQRcode.vue" afterPath="$PROJECT_DIR$/src/page/QRcode/addQRcode.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/list.vue" afterPath="$PROJECT_DIR$/src/components/list.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/QRcode/QRcodeDetail.vue" afterPath="$PROJECT_DIR$/src/page/QRcode/QRcodeDetail.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/QRcode/index.vue" afterPath="$PROJECT_DIR$/src/page/QRcode/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/home.vue" afterPath="$PROJECT_DIR$/src/page/home.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/income/cash.vue" afterPath="$PROJECT_DIR$/src/page/income/cash.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/income/filter.vue" afterPath="$PROJECT_DIR$/src/page/income/filter.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/income/incomeDetail.vue" afterPath="$PROJECT_DIR$/src/page/income/incomeDetail.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/income/incomeList.vue" afterPath="$PROJECT_DIR$/src/page/income/incomeList.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/income/index.vue" afterPath="$PROJECT_DIR$/src/page/income/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/shouKuan/index.vue" afterPath="$PROJECT_DIR$/src/page/shouKuan/index.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/sign/createStore.vue" afterPath="$PROJECT_DIR$/src/page/sign/createStore.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/sign/setPassword.vue" afterPath="$PROJECT_DIR$/src/page/sign/setPassword.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/sign/signIn.vue" afterPath="$PROJECT_DIR$/src/page/sign/signIn.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/page/sign/signUp.vue" afterPath="$PROJECT_DIR$/src/page/sign/signUp.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router-config.js" afterPath="$PROJECT_DIR$/src/router-config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store.js" afterPath="$PROJECT_DIR$/src/store.js" />
     </list>
     <ignored path="youzan.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,27 +40,22 @@
         <entry file="file://$PROJECT_DIR$/src/page/income/index.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
               <folding>
-                <element signature="e#1472#1813#0" expanded="true" />
-                <element signature="e#1677#1689#0" expanded="true" />
-                <element signature="e#1840#2865#0" expanded="true" />
-                <element signature="e#1933#2858#0" expanded="true" />
-                <element signature="e#1979#2596#0" expanded="true" />
-                <element signature="e#2069#2582#0" expanded="true" />
-                <element signature="e#2091#2564#0" expanded="true" />
+                <element signature="e#1832#1859#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="incomeList.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="incomeList.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/page/income/incomeList.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7302752">
-              <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
               <folding>
-                <element signature="e#285#313#0" expanded="true" />
+                <element signature="e#264#292#0" expanded="true" />
+                <element signature="e#330#345#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,10 +65,13 @@
         <entry file="file://$PROJECT_DIR$/src/page/income/filter.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+              <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
               <folding>
                 <element signature="e#2824#2921#0" expanded="true" />
                 <element signature="e#2959#3154#0" expanded="true" />
+                <element signature="e#3647#3900#0" expanded="true" />
+                <element signature="e#3697#3880#0" expanded="true" />
+                <element signature="e#3744#3858#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,29 +81,37 @@
         <entry file="file://$PROJECT_DIR$/src/store.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
-                <element signature="e#201#357#0" expanded="true" />
-                <element signature="e#363#519#0" expanded="true" />
-                <element signature="e#525#680#0" expanded="true" />
-                <element signature="e#686#842#0" expanded="true" />
-                <element signature="e#862#888#0" expanded="true" />
-                <element signature="e#1015#1251#0" expanded="true" />
-                <element signature="e#1292#1320#0" expanded="true" />
+                <element signature="e#193#843#0" expanded="true" />
+                <element signature="e#860#886#0" expanded="true" />
+                <element signature="e#906#1212#0" expanded="true" />
+                <element signature="e#1031#1203#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="list.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/list.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.46291867">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding>
-                <element signature="e#2462#2670#0" expanded="true" />
-                <element signature="e#2506#2572#0" expanded="true" />
-                <element signature="e#2639#2654#0" expanded="true" />
+                <element signature="e#2507#2796#0" expanded="true" />
+                <element signature="e#2655#2699#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QRcodeDetail.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/page/QRcode/QRcodeDetail.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="e#1141#1157#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,16 +146,12 @@
         <option value="$PROJECT_DIR$/src/page/shouKuan/status.vue" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/page/QRcode/addQRcode.vue" />
-        <option value="$PROJECT_DIR$/src/page/QRcode/index.vue" />
-        <option value="$PROJECT_DIR$/src/page/QRcode/QRcodeDetail.vue" />
-        <option value="$PROJECT_DIR$/src/page/income/cash.vue" />
         <option value="$PROJECT_DIR$/src/assets/css/theme.less" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/page/sign/findPassword.vue" />
         <option value="$PROJECT_DIR$/src/page/sign/forgetPassword.vue" />
         <option value="$PROJECT_DIR$/src/page/sign/resetPassword.vue" />
         <option value="$PROJECT_DIR$/src/assets/data/userJson.json" />
-        <option value="$PROJECT_DIR$/src/assets/js/util.js" />
         <option value="$PROJECT_DIR$/src/page/sign/signUp.vue" />
         <option value="$PROJECT_DIR$/src/page/sign/setPassword.vue" />
         <option value="$PROJECT_DIR$/src/page/sign/createStore.vue" />
@@ -179,17 +162,22 @@
         <option value="$PROJECT_DIR$/src/page/income/incomeDetail.vue" />
         <option value="$PROJECT_DIR$/src/page/sign/signIn.vue" />
         <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/src/page/income/index.vue" />
         <option value="$PROJECT_DIR$/src/components/filter.vue" />
         <option value="$PROJECT_DIR$/src/page/income/income.vue" />
         <option value="$PROJECT_DIR$/src/page/income/incomeContent.vue" />
         <option value="$PROJECT_DIR$/src/components/m-list.vue" />
         <option value="$PROJECT_DIR$/src/router-config.js" />
-        <option value="$PROJECT_DIR$/src/components/list.vue" />
         <option value="$PROJECT_DIR$/static/data/filter.json" />
-        <option value="$PROJECT_DIR$/src/store.js" />
-        <option value="$PROJECT_DIR$/src/page/income/filter.vue" />
+        <option value="$PROJECT_DIR$/src/page/income/cash.vue" />
+        <option value="$PROJECT_DIR$/src/page/income/result.vue" />
+        <option value="$PROJECT_DIR$/src/page/QRcode/index.vue" />
+        <option value="$PROJECT_DIR$/src/assets/js/util.js" />
         <option value="$PROJECT_DIR$/src/page/income/incomeList.vue" />
+        <option value="$PROJECT_DIR$/src/page/income/index.vue" />
+        <option value="$PROJECT_DIR$/src/page/income/filter.vue" />
+        <option value="$PROJECT_DIR$/src/page/QRcode/QRcodeDetail.vue" />
+        <option value="$PROJECT_DIR$/src/store.js" />
+        <option value="$PROJECT_DIR$/src/components/list.vue" />
       </list>
     </option>
   </component>
@@ -201,8 +189,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="776" />
-    <option name="width" value="1147" />
+    <option name="x" value="761" />
+    <option name="width" value="1162" />
     <option name="height" value="1041" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -236,6 +224,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -254,132 +244,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="income" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youzan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -476,16 +342,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="776" y="0" width="1147" height="1041" extended-state="0" />
+    <frame x="761" y="0" width="1162" height="1041" extended-state="1" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20198376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15658364" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31978023" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31868133" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -508,13 +374,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/sign/createStore.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -679,20 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/QRcode/QRcodeDetail.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3846154">
-          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/income/cash.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.435898">
-          <caret line="41" column="10" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/css/theme.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.9230769">
@@ -707,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/sign/resetPassword.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -725,13 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.3846154">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/sign/signUp.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6390532">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -770,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/QRcode/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/page/income/incomeDetail.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -796,18 +620,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/sign/signIn.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="29.733334">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/router-config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/income/cash.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69138753">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/income/result.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.511111">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/js/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2931818">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -818,57 +656,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/income/index.vue">
+    <entry file="file://$PROJECT_DIR$/src/page/QRcode/index.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#1472#1813#0" expanded="true" />
-            <element signature="e#1677#1689#0" expanded="true" />
-            <element signature="e#1840#2865#0" expanded="true" />
-            <element signature="e#1933#2858#0" expanded="true" />
-            <element signature="e#1979#2596#0" expanded="true" />
-            <element signature="e#2069#2582#0" expanded="true" />
-            <element signature="e#2091#2564#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-8.6">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/list.vue">
+    <entry file="file://$PROJECT_DIR$/src/page/sign/signUp.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding>
-            <element signature="e#2462#2670#0" expanded="true" />
-            <element signature="e#2506#2572#0" expanded="true" />
-            <element signature="e#2639#2654#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.051497005">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/sign/signIn.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.56646705">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1465909">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6840909">
+          <caret line="45" column="2" selection-start-line="45" selection-start-column="2" selection-end-line="45" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/page/income/incomeList.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
           <folding>
-            <element signature="e#849#1046#0" expanded="true" />
-            <element signature="e#1176#1221#0" expanded="true" />
+            <element signature="e#264#292#0" expanded="true" />
+            <element signature="e#330#345#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store.js">
+    <entry file="file://$PROJECT_DIR$/src/page/income/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="60" column="10" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+          <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
           <folding>
-            <element signature="e#201#357#0" expanded="true" />
-            <element signature="e#363#519#0" expanded="true" />
-            <element signature="e#525#680#0" expanded="true" />
-            <element signature="e#686#842#0" expanded="true" />
-            <element signature="e#862#888#0" expanded="true" />
-            <element signature="e#1015#1251#0" expanded="true" />
-            <element signature="e#1292#1320#0" expanded="true" />
+            <element signature="e#1832#1859#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,20 +708,47 @@
     <entry file="file://$PROJECT_DIR$/src/page/income/filter.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+          <caret line="99" column="19" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
           <folding>
             <element signature="e#2824#2921#0" expanded="true" />
             <element signature="e#2959#3154#0" expanded="true" />
+            <element signature="e#3647#3900#0" expanded="true" />
+            <element signature="e#3697#3880#0" expanded="true" />
+            <element signature="e#3744#3858#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/page/income/incomeList.vue">
+    <entry file="file://$PROJECT_DIR$/src/page/QRcode/QRcodeDetail.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7302752">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="e#285#313#0" expanded="true" />
+            <element signature="e#1141#1157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#193#843#0" expanded="true" />
+            <element signature="e#860#886#0" expanded="true" />
+            <element signature="e#906#1212#0" expanded="true" />
+            <element signature="e#1031#1203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/list.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46291867">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#2507#2796#0" expanded="true" />
+            <element signature="e#2655#2699#0" expanded="true" />
           </folding>
         </state>
       </provider>

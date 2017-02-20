@@ -15,16 +15,14 @@
                     提现
                 </router-link>
             </flexbox-item>
-            <flexbox-item class="flexbox-item">
-                <router-link to="/incomeList">
+            <flexbox-item class="flexbox-item" @click.native="handlerFilter()">
                     收支明细
-                </router-link>
             </flexbox-item>
         </flexbox>
         <group :gutter="'10px'">
-            <cell title="今日收入" is-link><span class="cell_value">￥100.00</span></cell>
-            <cell title="近七天收入" is-link><span class="cell_value">￥100.00</span></cell>
-            <cell title="近30天收入" is-link><span class="cell_value">￥100.00</span></cell>
+            <cell title="今日收入" is-link><span class="cell_value" @click.native="handlerFilter(1)">￥100.00</span></cell>
+            <cell title="近七天收入" is-link><span class="cell_value" @click.native="handlerFilter(7)">￥100.00</span></cell>
+            <cell title="近30天收入" is-link><span class="cell_value" @click.native="handlerFilter(30)">￥100.00</span></cell>
         </group>
         <!-- 图表 -->
         <div class="chart_content">
@@ -52,7 +50,13 @@
             }
         },
         methods: {
-
+            handlerFilter (recently){
+                this.$router.beforeEach( (to, from, next) => {
+                    store.commit('getTradList',{});
+                    next();
+                });
+                this.$router.push('/incomeList');
+            }
         },
         created () {
 

@@ -90,7 +90,14 @@
             // 筛选
             handlerFilter (){
                 let data = this.$data;
-                store.commit('getTradList',data);
+                this.$router.beforeEach(function (to, from, next) {
+                    store.commit('getTradList', {
+                        success: function () {
+                            console.log('测试回调函数');
+                            next();
+                        }
+                    });
+                });
                 this.$router.push('/incomeList');
             }
         }

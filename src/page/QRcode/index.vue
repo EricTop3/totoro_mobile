@@ -6,8 +6,8 @@
                 添加
             </router-link>
         </x-header>
-        <group>
-            <cell title="7-ELEVEN黄村店台卡" inline-desc="今日收入 ￥20.00" is-link>
+        <group v-for="item in TKList" gutter="15px">
+            <cell :link="'/QRcodeDetail?TKId='+item.TKId" :title="item.TKname" :inline-desc="'今日收入 ￥' + item.amount" is-link>
                 <i class="iconfont icon-infenicon15"></i>
             </cell>
         </group>
@@ -25,7 +25,23 @@
         },
         data() {
           return {
-
+                TKList: [
+                    {
+                        TKId: 'id1234',
+                        TKname: '7-ELEVEN黄村店台卡',
+                        amount: '20.00'
+                    },
+                    {
+                        TKId: 'id1234',
+                        TKname: '7-ELEVEN黄村店台卡',
+                        amount: '20.00'
+                    },
+                    {
+                        TKId: 'id1234',
+                        TKname: '7-ELEVEN黄村店台卡',
+                        amount: '20.00'
+                    }
+                ]
           }
         },
         methods: {

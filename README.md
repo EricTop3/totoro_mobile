@@ -1,6 +1,6 @@
-# youzan
+# totoro_mobile
 
-> 有赞支付
+> 龙猫支付移动端
 
 ## Build Setup
 

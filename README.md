@@ -3,7 +3,7 @@
 > 龙猫支付移动端
 
 ## Build Setup
-
+vux项目一定要用npm安装,否则后果自负
 ``` bash
 # install dependencies
 npm install

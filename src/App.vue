@@ -11,7 +11,7 @@
 
 <style lang="less">
     @import '~vux/src/styles/reset.less';
-    @import '//at.alicdn.com/t/font_c3y7a0wfn0dd9529.css';
+    @import '//at.alicdn.com/t/font_awaa3h6qaeylow29.css';
 
     body {
         background-color: @background-color;

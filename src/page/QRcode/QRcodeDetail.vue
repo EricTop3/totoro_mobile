@@ -4,7 +4,9 @@
         <x-header title="台卡" :left-options="{showBack: true, backText: ''}"></x-header>
         <main>
             <div class="content">
-                <cell title="台卡名称:7-ELEVEN黄村店台卡" is-link class="content_title" @click.native="changeTKname"></cell>
+                <cell :title="'台卡名称:'+TKname" class="content_title" @click.native="showDialog = true">
+                    <i slot="child" class="iconfont icon-modify" style="color: #333;"></i>
+                </cell>
                 <img src="" alt="" width="160" height="160" style="margin: 20px 0 15px;">
                 <div>
                     <i class="iconfont icon-weixin"></i>
@@ -17,19 +19,23 @@
                 <x-button type="primary" plain class="submit" @click.native="handlerFilter">查看流水</x-button>
             </div>
         </main>
+        <!--<m-dialog :title="修改台卡名称" :placeholder="请输入台卡名称" @on-change="" @on-ok=""></m-dialog>-->
+        <m-dialog></m-dialog>
     </div>
 </template>
 
 <script>
+    import MDialog from 'components/MDialog.vue'
     import { XHeader, XButton, Cell } from 'vux'
     export default {
         name: 'QRcodeDetail',
         components: {
-            XHeader, XButton, Cell
+            XHeader, XButton, Cell,MDialog
         },
         data (){
             return {
-
+                TKname: '7-ELEVEN黄村店台卡',
+                showDialog: false
             }
         },
         methods: {

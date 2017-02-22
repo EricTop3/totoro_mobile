@@ -2,29 +2,53 @@
 <template>
     <div class="shouKuang">
         <x-header title="收款" :left-options="{ showBack: true, backText:''}"></x-header>
+        <div style="padding: 10px 15px;">
+            <div style="text-align: center;margin: 15px 0;">
+                <img src="static/img/bg_01.png" alt="" width="40" height="40" style="border-radius: 50%;vertical-align: middle;margin: 0 10px;">
+                周黑鸭大学城北店
+            </div>
+            <div style="line-height:35px;padding: 10px 15px;border-radius:2px;border: solid 1px #1b96d5;font-size: 24px;">
+                <flexbox>
+                    <flexbox-item>
+                        <span v-show="!total" style="font-size: 20px;">请输入消费金额</span>
+                        <span v-show="total">{{total.toFixed(2)}}</span>
+                    </flexbox-item>
+                    <flexbox-item :span="1/6" style="text-align: right;">
+                        <i class="iconfont icon-iconmoney" style="vertical-align: middle;margin-right: 15px;font-size: 16px;"></i>
+                    </flexbox-item>
+                </flexbox>
+
+            </div>
+        </div>
         <div class="compute">
-            <div class="formula">{{formula}}</div>
-            <div class="money">{{total.toFixed(2)}}</div>
+            <!--<div class="formula">{{formula}}</div>-->
+            <!--<div class="money">{{total.toFixed(2)}}</div>-->
+            <img src="static/img/logo_01.png" alt="" width="100%" style="background-color:#f2f3f8; ">
             <div class="compute_content">
-                <div class="weui_cell">
+                <!--<div class="weui_cell">
                     <div class="weui_cell_hd weui_cell_primary">优惠金额:{{discount.toFixed(2)}}</div>
                     <div class="weui_cell_bd">应收金额:{{actual.toFixed(2)}}</div>
-                </div>
+                </div>-->
                 <div class="compute_number">
                     <flexbox  :gutter="0">
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(7)">7</flexbox-item>
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(8)">8</flexbox-item>
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(9)">9</flexbox-item>
-                        <flexbox-item :span="1/4" @click.native="handlerDel"><i class="iconfont icon-jiantouzuo"></i></flexbox-item>
+                        <flexbox-item :span="1/4" @click.native="handlerDel"><i class="iconfont icon-shanchu"></i></flexbox-item>
                     </flexbox>
-                    <flexbox :gutter="0">
+                    <!--<flexbox :gutter="0">
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(4)">4</flexbox-item>
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(5)">5</flexbox-item>
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(6)">6</flexbox-item>
                         <flexbox-item :span="1/4" @click.native="handlerAdd"><i class="iconfont icon-jiajian02"></i></flexbox-item>
-                    </flexbox>
+                    </flexbox>-->
                     <flexbox :gutter="0" align="stretch" class="noborder_bottom">
-                        <flexbox-item :span="3/4" class="noborder_bottom">
+                        <flexbox-item :span="3/4" class="noborder_bottom" style="border-right: 0;">
+                            <flexbox :gutter="0">
+                                <flexbox-item :span="1/3" @click.native="handlerClickNum(4)">4</flexbox-item>
+                                <flexbox-item :span="1/3" @click.native="handlerClickNum(5)">5</flexbox-item>
+                                <flexbox-item :span="1/3" @click.native="handlerClickNum(6)">6</flexbox-item>
+                            </flexbox>
                             <flexbox :gutter="0">
                                 <flexbox-item :span="1/3" @click.native="handlerClickNum(1)">1</flexbox-item>
                                 <flexbox-item :span="1/3" @click.native="handlerClickNum(2)">2</flexbox-item>
@@ -74,7 +98,15 @@
         methods: {
             // 点击键盘事件
             handlerClickNum (val) {
-                this.formula += val;
+                if(/\./.test(this.formula)){
+                    var dots = this.formula.split('.')[1].length ;
+                    if(dots < 2){
+                        this.formula += val;
+                    }
+                }else {
+                    this.formula += val;
+                }
+
             },
             // 收款
             handlerCollect (){
@@ -128,13 +160,14 @@
         left: 0;
         right: 0;
         background-color: #fff;
+        font-size: 0;
     }
     .shouKuang .money,.shouKuang .formula{
-        text-align: right;
+        text-align: left;
         background-color: @background-color;
         color: #000;
         font-size: 25px;
-        padding-right: 15px;
+        padding: 0 15px;
         line-height: 2;
     }
     .shouKuang .formula{
@@ -142,36 +175,33 @@
         font-size: 20px;
     }
     /*.weui_cell{height: 90px;}*/
-    .shouKuang .compute_number{
+    .shouKuang .compute .compute_number{
         text-align: center;
     }
-    .shouKuang .btn.vux-flexbox-item{
+    .shouKuang .compute .btn.vux-flexbox-item{
         background-color: @primary-color;
         color: #fff;
-        line-height: 108px;
+        line-height: 162px;
 
     }
 
 
-    .shouKuang .vux-flex-row{
+    .shouKuang .compute .vux-flex-row{
         text-align: center;
         font-size: 23px;
         color: #333;
         border-bottom: solid 1px #e2e2e7;
     }
-    .shouKuang .noborder_bottom{
+    .shouKuang  .compute .noborder_bottom{
         border-bottom: none;
     }
     .shouKuang .weui_cell{
         border-bottom: solid 1px #e2e2e7;
         color: @text-color;
     }
-    .shouKuang .vux-flexbox-item{
+    .shouKuang .compute .vux-flexbox-item{
         border-right: solid 1px #e2e2e7;
         line-height: 54px;
-    }
-    .shouKuang .vux-flexbox-item:last-of-type{
-        border: none;
     }
 
 </style>

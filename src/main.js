@@ -6,8 +6,7 @@ import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import App from './App'
 import routerConfig from './router-config'
-import {ToastPlugin} from 'vux'
-import  { LoadingPlugin } from 'vux'
+import  { ToastPlugin, LoadingPlugin, ConfirmPlugin  } from 'vux'
 import Utils from './assets/js/util'
 import store from './store.js'
 
@@ -15,6 +14,7 @@ Vue.use(VueRouter)
 Vue.use(VueResource)
 Vue.use(ToastPlugin)
 Vue.use(LoadingPlugin)
+Vue.use(ConfirmPlugin )
 
 
 // 定义一个全局方法，将这个方法挂载到Vue上

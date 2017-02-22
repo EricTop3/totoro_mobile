@@ -1,7 +1,7 @@
 <!-- 收款状态 -->
 <template>
     <div class="SK_status">
-        <x-header title="完成支付" :left-options="{showBack: true, backText: ''}"></x-header>
+        <x-header title="完成收款" :left-options="{showBack: true, backText: ''}"></x-header>
         <main>
             <div class="content">
                 <i class="weui_icon_success weui_icon_msg"></i>
@@ -9,7 +9,6 @@
                 <p class="text">完成收款</p>
             </div>
             <x-button type="primary" class="btn" @click.native="handlerClick">继续收银</x-button>
-
         </main>
     </div>
 </template>

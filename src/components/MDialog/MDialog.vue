@@ -1,9 +1,9 @@
 <template>
     <div>
-        <x-dialog v-model="showDialog" class="m-dialog">
-            <h4 style="font-size: 23px;color: #1a1e36;text-align: left;">添加台卡</h4>
+        <x-dialog v-model="mValue" class="m-dialog">
+            <h4 style="font-size: 23px;color: #1a1e36;text-align: left;">{{mTitle}}</h4>
             <p style="padding: 15px 0;margin: 20px 0;">
-                <input v-model="value" type="text" class="weui_input" :placeholder="placeholder">
+                <input v-model="inputVal" type="text" class="weui_input" :placeholder="mPlaceholder">
             </p>
             <flexbox :gutter="0" style="text-align: center;" justify="space-between">
                 <flexbox-item>
@@ -21,30 +21,38 @@
     import { XDialog, Flexbox, FlexboxItem } from 'vux'
     export default{
         name: 'MDialog',
+        props: ['value','title','placeholder'],
         data(){
             return{
-                showDialog: true,
-                title: '测试台卡',
-                placeholder:'请输入台卡名称',
-                cancelText: '取消',
-                OKtext: '保存',
-                value: ''
+                mValue: this.value,
+                mTitle: this.title || '标题',
+                mPlaceholder: this.placeholder || '请输入',
+                inputVal: ''
+            }
+        },
+        watch: {
+            // 来自于组件v-model
+            value (val){
+                this.mValue = val;
+            },
+            mValue (val){
+                this.$emit('input',val);
+            },
+            inputVal (val){
+                this.$emit('change',val)
             }
         },
         components:{
             XDialog, Flexbox, FlexboxItem
         },
-        watch: {
-            value (val){
-
-            }
-        },
         methods: {
             handlerSave (){
-
+                this.mValue = false;
+                this.$emit('save',this.inputVal);
             },
             handlerCancel (){
-
+                this.mValue = false;
+                this.$emit('cancel');
             }
         }
     }

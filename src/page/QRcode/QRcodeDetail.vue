@@ -19,13 +19,12 @@
                 <x-button type="primary" plain class="submit" @click.native="handlerFilter">查看流水</x-button>
             </div>
         </main>
-        <!--<m-dialog :title="修改台卡名称" :placeholder="请输入台卡名称" @on-change="" @on-ok=""></m-dialog>-->
-        <m-dialog></m-dialog>
+        <m-dialog v-model="showDialog" title="修改台卡名称" placeholder="请输入台卡名称"  @save="changeTKname"></m-dialog>
     </div>
 </template>
 
 <script>
-    import MDialog from 'components/MDialog.vue'
+    import MDialog from 'components/MDialog/MDialog.vue'
     import { XHeader, XButton, Cell } from 'vux'
     export default {
         name: 'QRcodeDetail',
@@ -40,9 +39,10 @@
         },
         methods: {
             // 修改台卡名称
-            changeTKname (){
+            changeTKname (val){
                 // TODO修改台卡名称
-
+                console.log(val);
+                this.TKname = val;
             },
             // 查看当前台卡流水
             handlerFilter (){
@@ -93,5 +93,4 @@
     .QRcodeDetail .content_title{
         border-bottom: solid 1px #e2e2e7;
     }
-
 </style>

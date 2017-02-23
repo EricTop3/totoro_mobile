@@ -34,7 +34,7 @@
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(7)">7</flexbox-item>
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(8)">8</flexbox-item>
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(9)">9</flexbox-item>
-                        <flexbox-item :span="1/4" @click.native="handlerDel"><i class="iconfont icon-shanchu"></i></flexbox-item>
+                        <flexbox-item :span="1/4" @click.native="handlerDel"><i class="iconfont icon-delete"></i></flexbox-item>
                     </flexbox>
                     <!--<flexbox :gutter="0">
                         <flexbox-item :span="1/4" @click.native="handlerClickNum(4)">4</flexbox-item>
@@ -153,7 +153,10 @@
         color: #333;
         font-size: 20px;
     }
-
+    .shouKuang  .icon-delete{
+        font-size: 26px;
+        color: #666;
+    }
     .shouKuang .compute{
         position: fixed;
         bottom: 0;

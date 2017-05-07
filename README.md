@@ -1,6 +1,6 @@
 # totoro_mobile
 
-> 龙猫支付移动端
+> 某支付移动端
 
 ## Build Setup
 vux项目一定要用npm安装,否则后果自负
